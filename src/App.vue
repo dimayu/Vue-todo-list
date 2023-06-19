@@ -45,6 +45,7 @@ nav {
 .todo {
   width: 50%;
   max-width: 940px;
+  min-width: 300px;
   position: relative;
   margin: 5% auto;
   background-color: #fff;

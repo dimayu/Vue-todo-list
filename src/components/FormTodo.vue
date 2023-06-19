@@ -65,8 +65,6 @@ export default {
       this.isActive = false;
     },
   },
-  computed: {
-  }
 };
 </script>
 

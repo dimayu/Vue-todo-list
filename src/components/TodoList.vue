@@ -105,41 +105,16 @@ export default {
           title: this.todo.title,
           description: this.todo.description,
         }
+        this.isEdite = false;
         this.$emit('saveTodo', data);
       }
     }
   },
-  computed: {
-  }
 };
 </script>
 
 <style scoped lang="scss">
 @import "../styles/variables";
-
-.todo-wrapper {
-  overflow-y: auto;
-  max-height: calc(70vh - 76px);
-
-  .todo-grid & {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    .todo__list {
-      width: 47%;
-      flex-direction: column;
-
-      &--title {
-        margin: 10px 0;
-      }
-
-      &--description {
-        margin: 0 0 10px;
-      }
-    }
-  }
-}
 
 .todo__list {
   display: flex;
@@ -147,9 +122,9 @@ export default {
   align-items: center;
   background-color: $color-red-bg;
   border-radius: 20px;
-  margin-bottom: 16px;
   color: #fff;
   padding: 12px;
+  box-sizing: border-box;
 
   &--content {
     text-align: center;

@@ -72,8 +72,6 @@ export default {
       localStorage.setItem('todos', JSON.stringify(this.todos));
     }
   },
-  computed: {
-  }
 };
 </script>
 
@@ -125,7 +123,29 @@ export default {
   }
 }
 
+.todo-grid {
+  .todo-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .todo__list {
+    flex-direction: column;
+
+    &--title {
+      margin: 10px 0;
+    }
+
+    &--description {
+      margin: 0 0 10px;
+    }
+  }
+}
+
 .todo-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
   max-height: calc(60vh - 76px);
   overflow-y: auto;
 }
