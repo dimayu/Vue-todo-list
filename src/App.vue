@@ -18,7 +18,7 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.2;
   color: $color-red;
   overflow: hidden;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 nav {
-  padding: 30px;
+  padding: 12px;
 
   a {
     font-weight: bold;
@@ -47,7 +47,7 @@ nav {
   max-width: 940px;
   min-width: 300px;
   position: relative;
-  margin: 5% auto;
+  margin: 2% auto;
   background-color: #fff;
   border-radius: 20px;
   box-sizing: border-box;
@@ -57,6 +57,6 @@ nav {
 .wrapper {
   width: 100%;
   box-sizing: border-box;
-  padding: 24px 16px;
+  padding: 12px;
 }
 </style>

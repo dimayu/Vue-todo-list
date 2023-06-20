@@ -75,7 +75,7 @@ export default {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 40px;
+  bottom: 12px;
   width: 60px;
   height: 60px;
   display: flex;

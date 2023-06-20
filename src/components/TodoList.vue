@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isEdite" :class="[todo.isCompleted ? 'todo__list--completed todo__list' : 'todo__list']" >
+    <div v-if="isEdite" :class="[todo.isCompleted ? 'todo__list--completed todo__list todo__list__edite' : 'todo__list__edite todo__list']" >
       <input class="todo__list--input" v-model="todo.title"/>
       <input class="todo__list--input" v-model="todo.description"/>
       <button
@@ -161,6 +161,16 @@ export default {
 
   &--right {
     margin-top: 10px;
+  }
+
+  &__edite {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .todo__list--input {
+      width: 100%;
+    }
   }
 }
 

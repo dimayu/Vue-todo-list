@@ -82,7 +82,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 2vh;
 
   &--btn {
     display: flex;
@@ -145,8 +145,8 @@ export default {
 .todo-wrapper {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 24px;
-  max-height: calc(60vh - 76px);
+  gap: 12px;
+  height: calc(75vh - 76px);
   overflow-y: auto;
 }
 </style>
